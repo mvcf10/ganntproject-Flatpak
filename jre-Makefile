@@ -1,0 +1,11 @@
+all:
+	true
+
+install:
+	tar -xzf jre.tar.gz --owner root --group root --no-same-owner -C /app
+	mkdir -p /app/bin
+	mv /app/jre*/bin/java /app/bin
+	mkdir -p /app/lib
+	mv /app/jre*/lib/* /app/lib
+	rm -Rf /app/jre*
+

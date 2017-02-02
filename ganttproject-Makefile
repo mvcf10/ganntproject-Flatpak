@@ -1,0 +1,7 @@
+all:
+	true
+
+install:
+	mkdir -p /app/ganttproject /app/bin
+	cp -ra * /app/ganttproject
+	ln -s /app/ganttproject/ganttproject /app/bin

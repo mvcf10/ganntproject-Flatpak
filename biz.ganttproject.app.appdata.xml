@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+	<id>biz.ganttproject.app.desktop</id>
+	<metadata_license>GPL 3</metadata_license>
+	<project_license>GPL 3</project_license>
+	<name>Gantt Project</name>
+	<summary>GanttProject is a project scheduling application and management</summary>
+	<description>
+		<p>
+			GanttProject is a project scheduling application written in Java 
+			and featuring gantt chart, resource management, calendaring, import/export 
+			(MS Project, HTML, PDF, spreadsheets)
+		</p>
+	</description>
+	<url type="homepage">http://ganttproject.biz</url>
+</component>

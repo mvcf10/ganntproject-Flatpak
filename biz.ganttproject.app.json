@@ -1,0 +1,63 @@
+{
+  "app-id": "biz.ganttproject.app",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "3.22",
+  "sdk": "org.gnome.Sdk",
+  "command": "ganttproject",
+  "finish-args": [
+      "--socket=x11",
+      "--device=dri",
+      "--share=network"
+  ],
+  "modules": [
+      {
+          "name": "ganttproject",
+          "no-autogen": true,
+          "sources" : [
+	      {
+                  "type": "archive",
+                  "url": "https://github.com/bardsoftware/ganttproject/releases/download/ganttproject-2.8/ganttproject-2.8-r2016.zip",
+                  "sha256":"2cd25d9af459a0008b67e0bf02239f8e97de8717eaf7c9456f8079181220c846"
+              },
+              {
+                  "type": "file",
+                  "path": "biz.ganttproject.app.desktop",
+                  "dest-filename": "biz.ganttproject.app.desktop"
+              },
+              {
+                  "type": "file",
+                  "path": "biz.ganttproject.app.png",
+                  "dest-filename": "biz.ganttproject.app.png"
+              },
+              {
+                  "type": "file",
+                  "path": "ganttproject-Makefile",
+                  "dest-filename": "Makefile"
+              },
+              {
+                  "type": "file",
+                  "path": "biz.ganttproject.app.appdata.xml"
+              }
+          ]
+      },
+      {
+          "name": "jre",
+          "no-autogen": true,
+          "sources" : [
+              {
+                  "type": "file",
+                  "url": "http://javadl.oracle.com/webapps/download/AutoDL?BundleId=207765",
+                  "sha256": "66d8971b240bbd03d114308958fff0fb8068d0589122885d9591727e5472137f",
+                  "dest-filename": "jre.tar.gz"
+              },
+              {
+                  "type": "file",
+                  "path": "jre-Makefile",
+                  "dest-filename": "Makefile"
+              }
+          ]
+      }
+
+  ]
+}
+

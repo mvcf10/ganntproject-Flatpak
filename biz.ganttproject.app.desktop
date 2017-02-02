@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Ganttproject
+X-GNOME-FullName=Gantt Project
+Comment=GanttProject is a project scheduling application written in Java and featuring gantt chart, resource management, calendaring, import/export (MS Project, HTML, PDF, spreadsheets)
+Keywords=Gantt;
+Exec=/app/ganttproject/gantproject
+Icon=biz.ganttproject.app
+Terminal=false
+Type=Application
+Categories=Application;Office;
+StartupNotify=true
+
